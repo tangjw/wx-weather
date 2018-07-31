@@ -1,5 +1,11 @@
 /**index.wxss**/
 
+.container {
+  color: #fff;
+  font-size: 30rpx;
+  font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
 .bcg {
   position: fixed;
   /* z-index: 2; */
@@ -24,12 +30,25 @@
   position: relative;
   z-index: 2;
 }
-.city{
+
+.info {
+  padding-bottom: 50rpx;
+}
+
+.city {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
+  height: 90rpx;
+  font-size: 36rpx;
+  align-items: center;
 }
+
+.time {
+  font-size: 24rpx;
+}
+
 .city .time {
   position: absolute;
   font-size: 24rpx;
@@ -38,7 +57,7 @@
   transform: translateY(-50%);
 }
 
-.info .temp,
+/* .info .temp,
 .info .pm,
 .info .pm view,
 .info .weather {
@@ -48,4 +67,48 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+} */
+
+.message {
+  padding: 0 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+}
+
+.temp {
+  width: 100%;
+  height: 360rpx;
+  font-size: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp text {
+  height: 200rpx;
+}
+
+.num {
+  font-weight: 300;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+
+.pm {
+  display: flex;
+  justify-content: center;
+}
+
+.pm text {
+  font-size: 24rpx;
+  height: 1em;
+  line-height: 1em;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  background: rgba(240, 240, 240, 0.2);
 }
