@@ -1,13 +1,29 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <!-- 背景 -->
+  <!-- <view class='bcg' wx:if='{{!bcgImg}}' style='background: {{bcgColor}}'></view> -->
+  <view class='content'>
+    <view class='info'>
+      <view class='city'>
+        <!-- 城市 -->
+        <view>{{cityDatas.originalData.results[0].currentCity || '定位中'}}</view>
+        <!-- 更新时间 -->
+        <text class='time' wx:if='{{cityDatas.updateTimeFormat||true}}'>{{cityDatas.updateTimeFormat}} 111更新222</text>
+      </view>
+      <!-- 早午晚提示信息 -->
+      <view class='message'>{{message}}</view>
+      <!-- 温度数字 -->
+      <view wx:if='{{cityDatas.temperature || true}}' class='temp num' decode='true'>{{cityDatas.temperature||30}}
+        <text style='font-size:90rpx'>°</text>
+      </view>
+      <!-- 天气文本 -->
+      <view class='weather'>{{cityDatas.originalData.results[0].weather_data[0].weather || '晴'}}</view>
+      <!-- 污染指数 -->
+      <view class='pm' wx:if='{{cityDatas.pm.val || true }}'>
+        <text>{{cityDatas.pm.desc ||'轻度污染'}} {{cityDatas.pm.val || 117}}</text>
+      </view>
+    </view>
+
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
 </view>

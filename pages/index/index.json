@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "天气天气",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#40a7e7",
+  "navigationBarTextStyle": "light",
+  "enablePullDownRefresh": true
+}
