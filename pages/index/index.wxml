@@ -1,26 +1,26 @@
 <!--index.wxml-->
 <view class="container">
   <!-- 背景 -->
-  <!-- <view class='bcg' wx:if='{{!bcgImg}}' style='background: {{bcgColor}}'></view> -->
+  <view class='bcg' wx:if='{{!bcgImg}}' style='background: {{bcgColor}}'></view>
   <view class='content'>
     <view class='info'>
       <view class='city'>
         <!-- 城市 -->
         <view>{{cityDatas.originalData.results[0].currentCity || '定位中'}}</view>
         <!-- 更新时间 -->
-        <text class='time' wx:if='{{cityDatas.updateTimeFormat||true}}'>{{cityDatas.updateTimeFormat}} 111更新222</text>
+        <text class='time' wx:if='{{cityDatas.updateTimeFormat||true}}'>{{cityDatas.updateTimeFormat}}</text>
       </view>
       <!-- 早午晚提示信息 -->
       <view class='message'>{{message}}</view>
       <!-- 温度数字 -->
-      <view wx:if='{{cityDatas.temperature || true}}' class='temp num' decode='true'>{{cityDatas.temperature||30}}
+      <view wx:if='{{cityDatas.temperature || true}}' class='temp num' decode='true'>{{cityDatas.temperature}}
         <text style='font-size:90rpx'>°</text>
       </view>
       <!-- 天气文本 -->
-      <view class='weather'>{{cityDatas.originalData.results[0].weather_data[0].weather || '晴'}}</view>
+      <view class='weather'>{{cityDatas.originalData.results[0].weather_data[0].weather}}</view>
       <!-- 污染指数 -->
       <view class='pm' wx:if='{{cityDatas.pm.val || true }}'>
-        <text>{{cityDatas.pm.desc ||'轻度污染'}} {{cityDatas.pm.val || 117}}</text>
+        <text>{{cityDatas.pm.desc}} {{cityDatas.pm.val}}</text>
       </view>
     </view>
 

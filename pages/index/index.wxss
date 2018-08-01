@@ -3,7 +3,7 @@
 .container {
   color: #fff;
   font-size: 30rpx;
-  font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+  /* font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif"; */
 }
 
 .bcg {
@@ -25,8 +25,8 @@
 } */
 
 .content {
-  /* margin-top: 30rpx; */
-  background-color: #ccc;
+  margin-top: 30rpx;
+  /* background-color: #ccc; */
   position: relative;
   z-index: 2;
 }
