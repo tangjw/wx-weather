@@ -13,6 +13,7 @@ Page({
     // bcgColor: '#cccccc',
     message: '',
     cityDatas: {},
+    icons: ['/imgs/clothing.png', '/imgs/carwashing.png', '/imgs/pill.png', '/imgs/running.png', '/imgs/sun.png'],
   },
 
   /**
@@ -187,7 +188,13 @@ Page({
       }
     }
   },
-
+  //menu点击事件
+  menuMain(e) {
+    //console.log(e)
+    wx.navigateTo({
+      url: '/pages/setting/setting',
+    })
+  },
 
 })
 
