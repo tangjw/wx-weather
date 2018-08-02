@@ -1,1 +1,36 @@
 /* pages/setting/setting.wxss */
+
+.setting_container {
+  font-size: 28rpx;
+  color: #666;
+  padding: 30rpx 40rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  color: #40a7e7;
+  margin: 26rpx 0;
+}
+
+.item {
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+}
+
+.wx-switch-input {
+  width: 84rpx !important;
+  height: 43rpx !important;
+}
+
+.wx-switch-input::before {
+  width: 82rpx !important;
+  height: 38rpx !important;
+}
+
+.wx-switch-input::after {
+  width: 38rpx !important;
+  height: 38rpx !important;
+}

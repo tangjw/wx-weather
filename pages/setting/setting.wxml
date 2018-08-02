@@ -1,2 +1,23 @@
 <!--pages/setting/setting.wxml-->
-<text>pages/setting/setting.wxml</text>
+<view class='setting_container'>
+  <view class='diyui'>
+    <view class='title'>自定义</view>
+    <view class='content'>
+      <view class='item'>
+        <view>显示生活指数信息</view>
+        <switch color='#40a7e7' checked='{{!setting.hiddenIndex}}' bindchange='switchChange' data-switchparam='hiddenIndex'></switch>
+      </view>
+      <view class='item'>
+        <view>显示生活指数信息1</view>
+        <switch color='#40a7e7' checked='false' bindchange='switchChange' data-switchparam='hiddenIndex1'></switch>
+      </view>
+    </view>
+
+  </view>
+  <view class='toolkit'>
+    <view class='title'>小工具</view>
+  </view>
+  <view class='update'>
+    <view class='title'>检查更新</view>
+  </view>
+</view>
