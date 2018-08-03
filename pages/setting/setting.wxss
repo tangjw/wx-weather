@@ -43,11 +43,19 @@
 .sub .item {
   padding-left: 20rpx;
 }
+.item .desc1 {
+  display: flex;
+  align-items: flex-end;
 
-.item .tip {
+}
+.item .desc2 {
+ 
   font-size: 22rpx;
   color: #999;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin: 0 0 2rpx 10rpx;
+}
+
+.item slider {
+  width: 100%;
+  margin: 0 10rpx;
 }

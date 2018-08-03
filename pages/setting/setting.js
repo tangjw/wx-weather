@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    screenBrightness:50,
 
   },
 
@@ -66,5 +67,25 @@ Page({
   switchChange(e) {
     console.log(e)
   },
+  screenBrightnessChange(e){
+   
+    this.setScreenBrightness(e.detail.value)
+  },
 
+  screenBrightnessChanging(e) {
+   
+    this.setScreenBrightness(e.detail.value)
+  },
+  setScreenBrightness(val) {
+    let that = this
+    wx.setScreenBrightness({
+      value: val / 100,
+      success: function (res) {
+        that.setData({
+          screenBrightness: val,
+        })
+      },
+    })
+  },
+  
 })
