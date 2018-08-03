@@ -21,7 +21,7 @@
       <view class='item'>
         <view>
           <view>当前屏幕亮度</view>
-          <view class='desc'>范围0~100，0 最暗，100 最亮</view>
+          <view class='desc'>范围0~100，0 最暗，100  最亮</view>
         </view>
         <view>50</view>
       </view>
