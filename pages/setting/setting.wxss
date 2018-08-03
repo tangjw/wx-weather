@@ -14,7 +14,6 @@
 
 .item {
   display: flex;
- 
   justify-content: space-between;
   align-items: center;
   height: 100rpx;
@@ -33,4 +32,20 @@
 .wx-switch-input::after {
   width: 38rpx !important;
   height: 38rpx !important;
+}
+
+.subtitle{
+  font-size: 28rpx;
+  color: #40a7e7;
+}
+.sub .item {
+  padding-left: 20rpx;
+}
+
+.item .tip {
+  font-size: 22rpx;
+  color: #999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
